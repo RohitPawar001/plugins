@@ -1,0 +1,54 @@
+{
+    "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+    "name": "second-plugin",
+    "displayName": "Engine Plugin",
+    "version": "1.0.0",
+    "description": "Production-grade engine plugin with comprehensive configuration for AI-powered development tools. Provides skills, agents, rules, and hooks for enhanced coding workflows.",
+    "author": {
+        "name": "Engine Team",
+        "email": "dev@engine.com",
+        "url": "https://github.com/engine"
+    },
+    "homepage": "https://docs.engine.com/plugin",
+    "repository": "https://github.com/engine/plugin",
+    "license": "MIT",
+    "logo": "assets/logo.png",
+    "keywords": [
+        "engine",
+        "ai-assistant",
+        "developer-tools",
+        "code-generation",
+        "automation"
+    ],
+    "category": "developer-tools",
+    "tags": [
+        "productivity",
+        "ai",
+        "automation",
+        "code-quality"
+    ],
+    "defaultEnabled": true,
+    "skills": "./skills/",
+    "rules": "./rules/",
+    "agents": "./agents/",
+    "commands": "./commands/",
+    "hooks": "./hooks/hooks.json",
+    "mcpServers": "./mcp.json",
+    "lspServers": "./.lsp.json",
+    "outputStyles": "./output-styles/",
+    "experimental": {
+        "themes": "./themes/",
+        "monitors": "./monitors.json"
+    },
+    "dependencies": [
+        "core-utils",
+        {
+            "name": "ai-sdk",
+            "version": "^2.0.0"
+        }
+    ],
+    "settings": {
+        "agent": "default",
+        "subagentStatusLine": true
+    }
+}
