@@ -1,0 +1,22 @@
+{
+    "name": "engine-plugins",
+    "owner": {
+        "name": "AI Engine",
+        "email": "plugins@cursor.com"
+    },
+    "metadata": {
+        "description": "Official Cursor plugin marketplace: developer tools, framework rules, MCP integrations, and agent skills"
+    },
+    "plugins": [
+        {
+            "name": "create-plugin",
+            "source": "create-plugin",
+            "description": "Skill mapping, practice plans, and learning retrospectives."
+        },
+        {
+            "name": "second-plugin",
+            "source": "second-plugin",
+            "description": "Incremental transcript-driven memory updates for AGENTS.md using high-signal bullet points only."
+        }
+    ]
+}
